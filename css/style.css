@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'customFont';
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf'),
+    format('ttf');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'customFont';
+}
+
+.blog-card {
+    width: 383px;
+    border: 2px solid black;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 15px 2px hsl(0, 0%, 7%);
+    margin-top: 20px;
+}
+
+.blog-image {
+    width: 100%;
+}
+
+.blog-image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.blog-content {
+    margin-top: 20px;
+}
+
+.text-box {
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.text-light {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-weight: 900;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+}
+
+.heading:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.text {
+    color: hsl(0, 0%, 42%);
+}
+
+.blog-author-image {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.blog-author-image img {
+    width: 30px;
+}
+
+.author {
+    font-weight: 900;
+    font-size: smaller;
+}
+
+@media screen AND (max-width: 500px) {
+    .blog-card {
+        width: 300px;
+    }
+
+    .heading {
+        line-height: 1;
+    }
+}
+
+@media screen AND (max-width: 355px) {
+    .blog-card {
+        width: 250px;
+    }
+
+    .heading {
+        line-height: 1;
+        font-size: 20px;
+    }
+}
